@@ -1,0 +1,48 @@
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja {
+  border: 4px solid black;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 150px;
+  padding: 20px;
+}
+
+.grid-layout {
+  height: 650px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  display: grid;
+  /*Dividir en columnas*/
+  grid-template-columns: 80% auto;
+  /*dividir en filas*/
+  grid-template-rows: 20% 10% 60% auto;
+}
+
+.c1 {
+  /*Indicar como se comporta en una columna*/
+  grid-column: 1 / span 2;
+  background-color: aqua;
+}
+
+.c2 {
+  /*Indicar como se comporta en una columna*/
+  background-color: yellow;
+  grid-column: 1 / span 2;
+}
+
+.c3 {
+  background-color: red;
+}
+
+.c4 {
+  background-color: chocolate;
+}
+.c5 {
+  background-color: darkolivegreen;
+  grid-column: 1 / span 2;
+}
